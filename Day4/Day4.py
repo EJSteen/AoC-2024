@@ -46,7 +46,6 @@ def is_x_mas(matrix, row, column):
     rows, cols = len(matrix), len(matrix[0])
     letters = []
     
-    # Define the positions to check
     positions = [
         (row + 1, column - 1),  # bottom-left
         (row - 1, column - 1),  # top-left
@@ -54,7 +53,6 @@ def is_x_mas(matrix, row, column):
         (row - 1, column + 1),  # top-right
     ]
     
-    # Check validity of each position before accessing
     for r, c in positions:
         if 0 <= r < rows and 0 <= c < cols and matrix[r][c]:
             letters.append(matrix[r][c])
