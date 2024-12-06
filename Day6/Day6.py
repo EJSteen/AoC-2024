@@ -172,7 +172,7 @@ def walk_patrol(matrix, index):
          
     
 def get_answer():
-    print(part2())
+    print(part1(), part2())
 
 if __name__ == "__main__":
     get_answer()
