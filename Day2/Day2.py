@@ -3,7 +3,6 @@ def parse_input():
     with open('input.txt') as f:
         for line in f:
             levels += [[int(x) for x in line.strip().split(' ')]]
-
     return levels
 
 def part1():
