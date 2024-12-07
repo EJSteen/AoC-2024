@@ -29,6 +29,8 @@ def try_equation(equation, ops):
     for combination in op_combinations:
         result = equation[1]
         for i, op, in enumerate(combination):
+            if result > sum:
+                return 0
             if op == '+':
                 result += equation[i+2]
             elif op == '*':
